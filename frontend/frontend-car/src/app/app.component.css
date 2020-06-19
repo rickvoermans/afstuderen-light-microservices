@@ -1,0 +1,10 @@
+.display-flex {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #507594;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+}

@@ -35,17 +35,12 @@ public class    ApkCar {
     @Column(name = "APKCAR_DATE")
     private LocalDate date;
 
-    @ElementCollection
-    @Column(name = "APKCAR_REPLACED_COMPONENTS")
-    private List<String> components;
-
     @Column(name = "APKCAR_TOTAL_PRICE")
     private BigDecimal totalPrice;
 
-    public ApkCar(String license, LocalDate date, List<String> components, BigDecimal totalPrice) {
+    public ApkCar(String license, LocalDate date, BigDecimal totalPrice) {
         this.license = license;
         this.date = date;
-        this.components = components;
         this.totalPrice = totalPrice;
     }
 }
